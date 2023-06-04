@@ -4,7 +4,7 @@ A centralized place for config files used in many GitHub repositories 🛠️
 
 ## Why?
 
-If you have a lot of repositories, a small adjustment becomes a huge job to update this everywhere. This process is partly automated with this approach and in the end you only have work on merging the pull requests, created by [Repo File Sync].
+If you have a lot of repositories, a small adjustment becomes a huge job to update this everywhere. This process is partly automated with this approach and in the end you only have work on merging the pull requests.
 
 ## How it works
 

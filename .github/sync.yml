@@ -1,0 +1,38 @@
+---
+group:
+  # python repo's with Renovate
+  - files:
+      - source: ./python/renovate.json
+        dest: .github/renovate.json
+    repos: |
+      klaasnicolaas/python-arnhem
+      klaasnicolaas/python-easyenergy
+      klaasnicolaas/python-energyzero
+      klaasnicolaas/python-p1monitor
+
+  # python repo's with Dependabot
+  # - files:
+  #     - source: ./python/dependabot.yml
+  #       dest: .github/dependabot.yml
+  #   repos: |
+  #     klaasnicolaas/
+  #     klaasnicolaas/
+  #     klaasnicolaas/
+  #     klaasnicolaas/
+
+  # General
+
+  # Copier template
+  klaasnicolaas/pypackage-template:
+    # Template
+    - source: github/
+      dest: template/.github/
+    - source: python/.gitignore
+      dest: |
+        template/.gitignore
+        .gitignore
+    # Project general
+    - source: github/release-drafter.yml
+      dest: .github/release-drafter.yml
+    - source: github/labels.yml
+      dest: .github/labels.yml
