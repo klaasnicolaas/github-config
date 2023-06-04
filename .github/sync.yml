@@ -20,19 +20,19 @@ group:
   #     klaasnicolaas/
   #     klaasnicolaas/
 
-  # General
+# General
 
-  # Copier template
-  klaasnicolaas/pypackage-template:
-    # Template
-    - source: github/
-      dest: template/.github/
-    - source: python/.gitignore
-      dest: |
-        template/.gitignore
-        .gitignore
-    # Project general
-    - source: github/release-drafter.yml
-      dest: .github/release-drafter.yml
-    - source: github/labels.yml
-      dest: .github/labels.yml
+# Copier template
+klaasnicolaas/pypackage-template:
+  # Template
+  - source: github/
+    dest: template/.github/
+  - source: python/.gitignore
+    dest: |
+      template/.gitignore
+      .gitignore
+  # Project general
+  - source: github/release-drafter.yml
+    dest: .github/release-drafter.yml
+  - source: github/labels.yml
+    dest: .github/labels.yml
