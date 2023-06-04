@@ -24,12 +24,12 @@ group:
 
 # Copier template
 klaasnicolaas/pypackage-template:
-  # Template
+  # Template stuff
   - source: github/
     dest: template/.github/
   - source: python/.gitignore
     dest: template/.gitignore
-  # Project general
+  # Project general - single files
   - source: github/release-drafter.yml
     dest: .github/release-drafter.yml
   - source: github/labels.yml
