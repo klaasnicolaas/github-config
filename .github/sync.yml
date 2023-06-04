@@ -24,6 +24,8 @@ group:
       # General - files and folders
       - source: python/.gitignore
         dest: .gitignore
+      - source: github/
+        dest: .github/
     repos: |
       klaasnicolaas/python-antwerpen
       klaasnicolaas/python-brussel
