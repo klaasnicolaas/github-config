@@ -36,3 +36,6 @@ klaasnicolaas/pypackage-template:
     dest: .github/labels.yml
   - source: python/.gitignore
     dest: .gitignore
+  # Project general - folders
+  - source: github/workflows/
+    dest: .github/workflows/
