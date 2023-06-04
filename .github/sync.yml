@@ -2,8 +2,14 @@
 group:
   # python repo's with Renovate
   - files:
-      - source: ./python/renovate.json
+      # Specific
+      - source: python/renovate.json
         dest: .github/renovate.json
+      # General - files and folders
+      - source: python/.gitignore
+        dest: .gitignore
+      - source: github/
+        dest: .github/
     repos: |
       klaasnicolaas/python-arnhem
       klaasnicolaas/python-easyenergy
@@ -11,16 +17,30 @@ group:
       klaasnicolaas/python-p1monitor
 
   # python repo's with Dependabot
-  # - files:
-  #     - source: ./python/dependabot.yml
-  #       dest: .github/dependabot.yml
-  #   repos: |
-  #     klaasnicolaas/
-  #     klaasnicolaas/
-  #     klaasnicolaas/
-  #     klaasnicolaas/
-
-# General
+  - files:
+      # Specific
+      - source: python/dependabot.yml
+        dest: .github/dependabot.yml
+      # General - files and folders
+      - source: python/.gitignore
+        dest: .gitignore
+    repos: |
+      klaasnicolaas/python-antwerpen
+      klaasnicolaas/python-brussel
+      klaasnicolaas/python-dresden
+      klaasnicolaas/python-dusseldorf
+      klaasnicolaas/python-eindhoven
+      klaasnicolaas/python-eiswarnung
+      klaasnicolaas/python-gridnet
+      klaasnicolaas/python-hamburg
+      klaasnicolaas/python-koeln
+      klaasnicolaas/python-liege
+      klaasnicolaas/python-muenster
+      klaasnicolaas/python-namur
+      klaasnicolaas/python-odp-amsterdam
+      klaasnicolaas/python-odp-gent
+      klaasnicolaas/python-omnikinverter
+      klaasnicolaas/python-zurich
 
 # Copier template
 klaasnicolaas/pypackage-template:

@@ -4,5 +4,6 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
+      timezone: "Europe/Amsterdam"
       interval: daily
       time: "02:00"
