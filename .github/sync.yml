@@ -28,11 +28,11 @@ klaasnicolaas/pypackage-template:
   - source: github/
     dest: template/.github/
   - source: python/.gitignore
-    dest: |
-      template/.gitignore
-      .gitignore
+    dest: template/.gitignore
   # Project general
   - source: github/release-drafter.yml
     dest: .github/release-drafter.yml
   - source: github/labels.yml
     dest: .github/labels.yml
+  - source: python/.gitignore
+    dest: .gitignore
