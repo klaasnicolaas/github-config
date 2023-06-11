@@ -11,7 +11,11 @@ group:
       - source: github/
         dest: .github/
     repos: |
+      klaasnicolaas/python-antwerpen
       klaasnicolaas/python-arnhem
+      klaasnicolaas/python-brussel
+      klaasnicolaas/python-dresden
+      klaasnicolaas/python-dusseldorf
       klaasnicolaas/python-easyenergy
       klaasnicolaas/python-energyzero
       klaasnicolaas/python-p1monitor
@@ -27,10 +31,6 @@ group:
       - source: github/
         dest: .github/
     repos: |
-      klaasnicolaas/python-antwerpen
-      klaasnicolaas/python-brussel
-      klaasnicolaas/python-dresden
-      klaasnicolaas/python-dusseldorf
       klaasnicolaas/python-eindhoven
       klaasnicolaas/python-eiswarnung
       klaasnicolaas/python-gridnet
