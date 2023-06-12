@@ -16,6 +16,9 @@
       "(^|/)action\\.ya?ml$"
     ]
   },
+  "pre-commit": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchManagers": ["pre-commit"],
