@@ -10,6 +10,7 @@ group:
         dest: .gitignore
       - source: python/.yamllint
         dest: .yamllint
+      # .github folder + workflows
       - source: github/
         dest: .github/
     repos: |
@@ -50,14 +51,15 @@ group:
 
 # Copier template
 klaasnicolaas/pypackage-template:
-  # Template stuff
-  - source: github/
-    dest: template/.github/
+  ### Template stuff ###
   - source: python/.gitignore
     dest: template/.gitignore
   - source: python/.yamllint
     dest: template/.yamllint
-  # Project general - single files
+  # .github folder + workflows
+  - source: github/
+    dest: template/.github/
+  ### Project general - single files ###
   - source: github/release-drafter.yml
     dest: .github/release-drafter.yml
   - source: github/labels.yml
@@ -66,6 +68,6 @@ klaasnicolaas/pypackage-template:
     dest: .gitignore
   - source: python/.yamllint
     dest: .yamllint
-  # Project general - folders
+  ### Project general - workflows ###
   - source: github/workflows/
     dest: .github/workflows/
