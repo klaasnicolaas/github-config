@@ -2,9 +2,9 @@
 name: Sync files
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types:
+      - published
 
 concurrency:
   group: ${{ github.ref }}
