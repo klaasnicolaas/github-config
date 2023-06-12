@@ -39,14 +39,10 @@ jobs:
         run: poetry run pre-commit run check-json --all-files
       - name: 🚀 Check for merge conflicts
         run: poetry run pre-commit run check-merge-conflict --all-files
-      - name: 🚀 Check for broken symlinks
-        run: poetry run pre-commit run check-symlinks --all-files
       - name: 🚀 Check TOML files
         run: poetry run pre-commit run check-toml --all-files
       - name: 🚀 Check XML files
         run: poetry run pre-commit run check-xml --all-files
-      - name: 🚀 Check YAML files
-        run: poetry run pre-commit run check-yaml --all-files
       - name: 🚀 Check YAML files
         run: poetry run pre-commit run check-yaml --all-files
       - name: 🚀 Detect Private Keys
