@@ -17,22 +17,9 @@ group:
       klaasnicolaas/python-dresden
       klaasnicolaas/python-dusseldorf
       klaasnicolaas/python-easyenergy
-      klaasnicolaas/python-energyzero
-      klaasnicolaas/python-p1monitor
-
-  # python repo's with Dependabot
-  - files:
-      # Specific
-      - source: python/dependabot.yml
-        dest: .github/dependabot.yml
-      # General - files and folders
-      - source: python/.gitignore
-        dest: .gitignore
-      - source: github/
-        dest: .github/
-    repos: |
       klaasnicolaas/python-eindhoven
       klaasnicolaas/python-eiswarnung
+      klaasnicolaas/python-energyzero
       klaasnicolaas/python-gridnet
       klaasnicolaas/python-hamburg
       klaasnicolaas/python-koeln
@@ -42,7 +29,22 @@ group:
       klaasnicolaas/python-odp-amsterdam
       klaasnicolaas/python-odp-gent
       klaasnicolaas/python-omnikinverter
+      klaasnicolaas/python-p1monitor
       klaasnicolaas/python-zurich
+
+  # python repo's with Dependabot
+  # - files:
+  #     # Specific
+  #     - source: python/dependabot.yml
+  #       dest: .github/dependabot.yml
+  #     # General - files and folders
+  #     - source: python/.gitignore
+  #       dest: .gitignore
+  #     - source: python/.yamllint
+  #       dest: .yamllint
+  #     - source: github/
+  #       dest: .github/
+  #   repos: |
 
 # Copier template
 klaasnicolaas/pypackage-template:
