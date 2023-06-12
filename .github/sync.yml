@@ -8,6 +8,8 @@ group:
       # General - files and folders
       - source: python/.gitignore
         dest: .gitignore
+      - source: python/.yamllint
+        dest: .yamllint
       - source: github/
         dest: .github/
     repos: |
@@ -53,6 +55,8 @@ klaasnicolaas/pypackage-template:
     dest: template/.github/
   - source: python/.gitignore
     dest: template/.gitignore
+  - source: python/.yamllint
+    dest: template/.yamllint
   # Project general - single files
   - source: github/release-drafter.yml
     dest: .github/release-drafter.yml
@@ -60,6 +64,8 @@ klaasnicolaas/pypackage-template:
     dest: .github/labels.yml
   - source: python/.gitignore
     dest: .gitignore
+  - source: python/.yamllint
+    dest: .yamllint
   # Project general - folders
   - source: github/workflows/
     dest: .github/workflows/
