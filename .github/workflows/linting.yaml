@@ -26,4 +26,4 @@ jobs:
         run: |
           pip install yamllint
       - name: 🚀 Run yamllint
-        run: run yamllint .
+        run: yamllint .
