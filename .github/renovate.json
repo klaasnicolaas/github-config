@@ -18,6 +18,11 @@
   },
   "packageRules": [
     {
+      "matchManagers": ["pre-commit"],
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchManagers": ["poetry"],
       "addLabels": ["python"]
     },
