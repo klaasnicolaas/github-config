@@ -1,6 +1,7 @@
 ---
 name: Sync files
 
+# yamllint disable-line rule:truthy
 on:
   release:
     types:
