@@ -9,7 +9,7 @@ If you have a lot of repositories, a small adjustment becomes a huge job to upda
 ## How it works
 
 * Common config files are kept in this repository
-* When a PR is merged to this repo, the [Repo File Sync] action is triggered
+* When a release is published in this repo, the [Repo File Sync] action is triggered
 * PR's are raised in the target repos with the changes, defined in [sync.yml](.github/sync.yml)
 
 [copier]: https://copier.readthedocs.io/en/stable/
