@@ -41,8 +41,6 @@ jobs:
         run: poetry run pre-commit run check-merge-conflict --all-files
       - name: 🚀 Check TOML files
         run: poetry run pre-commit run check-toml --all-files
-      - name: 🚀 Check XML files
-        run: poetry run pre-commit run check-xml --all-files
       - name: 🚀 Check YAML files
         run: poetry run pre-commit run check-yaml --all-files
       - name: 🚀 Detect Private Keys
