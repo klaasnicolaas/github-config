@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "github-config"
+version = "0.1.0"
+description = "A tool to manage GitHub repository common configuration files."
+authors = ["Klaas Schoute <hello@student-techlife.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "3.3.2"
+pre-commit-hooks = "4.4.0"
+yamllint = "1.32.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
