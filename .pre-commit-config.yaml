@@ -1,20 +1,69 @@
 ---
-ci:
-  autoupdate_commit_msg: "chore: update pre-commit hooks"
-  autofix_commit_msg: "style: pre-commit fixes"
-
 repos:
   - repo: https://github.com/renovatebot/pre-commit-hooks
     rev: 35.115.2
     hooks:
       - id: renovate-config-validator
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+        name: 🤖 Validate Renovate Config
+  - repo: local
     hooks:
-      - id: check-added-large-files
       - id: check-case-conflict
+        name: 🔠 Check for case conflicts
+        language: system
+        entry: poetry run check-case-conflict
+      - id: check-executables-have-shebangs
+        name: 🧐 Check that executables have shebangs
+        language: system
+        types: [text, executable]
+        entry: poetry run check-executables-have-shebangs
+        stages: [commit, push, manual]
+      - id: check-json
+        name: ｛ Check JSON files
+        language: system
+        types: [json]
+        entry: poetry run check-json
       - id: check-merge-conflict
-      - id: debug-statements
+        name: 💥 Check for merge conflicts
+        language: system
+        types: [text]
+        entry: poetry run check-merge-conflict
+      - id: check-toml
+        name: ✅ Check TOML files
+        language: system
+        types: [toml]
+        entry: poetry run check-toml
+      - id: check-yaml
+        name: ✅ Check YAML files
+        language: system
+        types: [yaml]
+        entry: poetry run check-yaml
+      - id: detect-private-key
+        name: 🕵️  Detect Private Keys
+        language: system
+        types: [text]
+        entry: poetry run detect-private-key
       - id: end-of-file-fixer
-      - id: mixed-line-ending
+        name: ⮐  Fix End of Files
+        language: system
+        types: [text]
+        entry: poetry run end-of-file-fixer
+        stages: [commit, push, manual]
+      - id: no-commit-to-branch
+        name: 🛑 Don't commit to main branch
+        language: system
+        entry: poetry run no-commit-to-branch
+        pass_filenames: false
+        always_run: true
+        args:
+          - --branch=main
       - id: trailing-whitespace
+        name: ✄  Trim Trailing Whitespace
+        language: system
+        types: [text]
+        entry: poetry run trailing-whitespace-fixer
+        stages: [commit, push, manual]
+      - id: yamllint
+        name: 🎗 Check YAML files with yamllint
+        language: system
+        types: [yaml]
+        entry: poetry run yamllint
