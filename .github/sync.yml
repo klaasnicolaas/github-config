@@ -35,6 +35,20 @@ group:
       klaasnicolaas/python-p1monitor
       klaasnicolaas/python-zurich
 
+  # NIPKaart projects - general
+  - files:
+      # General - files and folders
+      - source: python/.gitignore
+        dest: .gitignore
+      - source: python/.yamllint
+        dest: .yamllint
+      # .github folder + workflows
+      - source: github/
+        dest: .github/
+    repos: |
+      NIPKaart/disabled-parking
+      NIPKaart/offstreet-parking
+
   # python repo's with Dependabot
   # - files:
   #     # Specific
