@@ -3,12 +3,12 @@ group:
   # python repo's with Renovate
   - files:
       # Specific
-      - source: python/renovate.json
+      - source: python_package/renovate.json
         dest: .github/renovate.json
       # General - files and folders
-      - source: python/.gitignore
+      - source: python_package/.gitignore
         dest: .gitignore
-      - source: python/.yamllint
+      - source: python_package/.yamllint
         dest: .yamllint
       # .github folder + workflows
       - source: github/
@@ -38,9 +38,9 @@ group:
   # NIPKaart projects - general
   - files:
       # General - files and folders
-      - source: python/.gitignore
+      - source: python_package/.gitignore
         dest: .gitignore
-      - source: python/.yamllint
+      - source: python_package/.yamllint
         dest: .yamllint
       # .github folder + workflows
       - source: github/
@@ -52,12 +52,12 @@ group:
   # python repo's with Dependabot
   # - files:
   #     # Specific
-  #     - source: python/dependabot.yml
+  #     - source: python_package/dependabot.yml
   #       dest: .github/dependabot.yml
   #     # General - files and folders
-  #     - source: python/.gitignore
+  #     - source: python_package/.gitignore
   #       dest: .gitignore
-  #     - source: python/.yamllint
+  #     - source: python_package/.yamllint
   #       dest: .yamllint
   #     - source: github/
   #       dest: .github/
@@ -66,9 +66,9 @@ group:
 # Copier template
 klaasnicolaas/pypackage-template:
   ### Template stuff ###
-  - source: python/.gitignore
+  - source: python_package/.gitignore
     dest: template/.gitignore
-  - source: python/.yamllint
+  - source: python_package/.yamllint
     dest: template/.yamllint
   # .github folder + workflows
   - source: github/
@@ -78,9 +78,9 @@ klaasnicolaas/pypackage-template:
     dest: .github/release-drafter.yml
   - source: github/labels.yml
     dest: .github/labels.yml
-  - source: python/.gitignore
+  - source: python_package/.gitignore
     dest: .gitignore
-  - source: python/.yamllint
+  - source: python_package/.yamllint
     dest: .yamllint
   ### Project general - workflows ###
   - source: github/workflows/
