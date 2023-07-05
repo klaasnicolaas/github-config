@@ -31,6 +31,8 @@ jobs:
           poetry config virtualenvs.in-project true
       - name: 🏗 Install Python dependencies
         run: poetry install --no-interaction
+      - name: 🚀 Check Renovate configuration
+        run: poetry run pre-commit run renovate-config-validator --all-files
       - name: 🚀 Check for case conflicts
         run: poetry run pre-commit run check-case-conflict --all-files
       - name: 🚀 Check that executables have shebangs
