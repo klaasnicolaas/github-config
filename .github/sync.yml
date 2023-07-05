@@ -5,6 +5,8 @@ group:
       # Specific
       - source: python_package/renovate.json
         dest: .github/renovate.json
+      - source: python_package/.devcontainer
+        dest: .devcontainer/
       # General - files and folders
       - source: python_package/.gitignore
         dest: .gitignore
