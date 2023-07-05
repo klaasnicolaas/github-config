@@ -72,6 +72,8 @@ klaasnicolaas/pypackage-template:
     dest: template/.gitignore
   - source: python_package/.yamllint
     dest: template/.yamllint
+  - source: python_package/.devcontainer
+    dest: template/.devcontainer/
   # .github folder + workflows
   - source: github/
     dest: template/.github/
