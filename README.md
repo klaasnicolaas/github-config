@@ -25,7 +25,7 @@ You need at least:
 Install all packages, including all development requirements:
 
 ```bash
-poetry install
+poetry install --no-root
 ```
 
 Poetry creates by default an virtual environment where it installs all
