@@ -42,7 +42,7 @@ group:
   # NIPKaart projects - general
   - files:
       # General - files and folders
-      - source: python_package/.gitignore
+      - source: nipkaart/.gitignore
         dest: .gitignore
       - source: python_package/.yamllint
         dest: .yamllint
