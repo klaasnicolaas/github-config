@@ -53,6 +53,18 @@ group:
       NIPKaart/disabled-parking
       NIPKaart/offstreet-parking
 
+  # Home Assistant Glow
+  - files:
+      # Specific - files
+      - source: github/release-drafter.yml
+        dest: .github/release-drafter.yml
+      - source: github/labels.yml
+        dest: .github/labels.yml
+      - source: github/FUNDING.yml
+        dest: .github/FUNDING.yml
+    repos: |
+      klaasnicolaas/home-assistant-glow
+
   # python repo's with Dependabot
   # - files:
   #     # Specific
