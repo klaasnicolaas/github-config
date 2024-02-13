@@ -21,11 +21,6 @@
   },
   "packageRules": [
     {
-      "matchManagers": ["pre-commit"],
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
-    },
-    {
       "matchManagers": ["poetry"],
       "addLabels": ["python"]
     },
@@ -35,7 +30,7 @@
       "rangeStrategy": "pin"
     },
     {
-      "matchManagers": ["poetry"],
+      "matchManagers": ["poetry", "github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
@@ -45,11 +40,6 @@
       "rangeStrategy": "pin",
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
     }
   ]
 }
