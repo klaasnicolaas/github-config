@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "github-config"
-version = "0.1.0"
+package-mode = false
 description = "A tool to manage GitHub repository common configuration files."
 authors = ["Klaas Schoute <hello@student-techlife.com>"]
 license = "MIT"

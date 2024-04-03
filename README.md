@@ -25,8 +25,10 @@ You need at least:
 Install all packages, including all development requirements:
 
 ```bash
-poetry install --no-root
+poetry install
 ```
+
+_This project will be installed in non-package mode._
 
 Poetry creates by default an virtual environment where it installs all
 necessary pip packages, to enter or exit the venv run the following commands:
