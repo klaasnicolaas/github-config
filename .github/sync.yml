@@ -93,6 +93,8 @@ klaasnicolaas/pypackage-template:
   # .github folder + workflows
   - source: github/
     dest: template/.github/
+    exclude: |
+      FUNDING.yml
   ### Project general - single files ###
   - source: github/release-drafter.yml
     dest: .github/release-drafter.yml
