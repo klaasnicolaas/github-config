@@ -22,7 +22,7 @@ jobs:
       - name: ⤵️ Checkout Code
         uses: actions/checkout@v4.1.4
       - name: 🚀 Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@v1.21.0
+        uses: BetaHuhn/repo-file-sync-action@v1.21.1
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
           ASSIGNEES: klaasnicolaas
