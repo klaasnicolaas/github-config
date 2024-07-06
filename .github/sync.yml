@@ -18,6 +18,7 @@ group:
     repos: |
       klaasnicolaas/python-antwerpen
       klaasnicolaas/python-arnhem
+      klaasnicolaas/python-autarco
       klaasnicolaas/python-brussel
       klaasnicolaas/python-dresden
       klaasnicolaas/python-dusseldorf
@@ -59,8 +60,6 @@ group:
   # Home Assistant Glow
   - files:
       # Specific - files
-      - source: github/release-drafter.yml
-        dest: .github/release-drafter.yml
       - source: github/labels.yml
         dest: .github/labels.yml
       - source: github/FUNDING.yml
