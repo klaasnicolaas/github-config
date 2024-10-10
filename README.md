@@ -22,6 +22,8 @@ You need at least:
 - Python 3.11+
 - [Poetry][poetry-install]
 
+### Installation
+
 Install all packages, including all development requirements:
 
 ```bash
@@ -30,25 +32,16 @@ poetry install
 
 _This project will be installed in non-package mode._
 
-Poetry creates by default an virtual environment where it installs all
-necessary pip packages, to enter or exit the venv run the following commands:
+### Pre-commit
+
+This repository uses the [pre-commit][pre-commit] framework, all changes
+are linted and tested with each commit. To setup the pre-commit check, run:
 
 ```bash
-poetry shell
-exit
+poetry run pre-commit install
 ```
 
-Setup the pre-commit check, you must run this inside the virtual environment:
-
-```bash
-pre-commit install
-```
-
-*Now you're all set to get started!*
-
-As this repository uses the [pre-commit][pre-commit] framework, all changes
-are linted and tested with each commit. You can run all checks and tests
-manually, using the following command:
+And to run all checks and tests manually, use the following command:
 
 ```bash
 poetry run pre-commit run --all-files
