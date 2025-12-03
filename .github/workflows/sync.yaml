@@ -20,7 +20,7 @@ jobs:
       pull-requests: write
     steps:
       - name: ⤵️ Checkout Code
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
       - name: 🚀 Run GitHub File Sync
         uses: BetaHuhn/repo-file-sync-action@v1.21.1
         with:
