@@ -54,6 +54,8 @@ group:
       - source: github/
         dest: .github/
         exclude: |
+          FUNDING.yml
+          PULL_REQUEST_TEMPLATE.md
           release-drafter.yml
           labels.yml
           workflows/release-drafter.yaml
@@ -80,8 +82,6 @@ group:
       # Specific - files
       - source: github/labels.yml
         dest: .github/labels.yml
-      - source: github/FUNDING.yml
-        dest: .github/FUNDING.yml
     repos: |
       klaasnicolaas/home-assistant-glow
 
@@ -113,6 +113,9 @@ klaasnicolaas/pypackage-template:
     dest: template/.github/
     exclude: |
       FUNDING.yml
+      ISSUE_TEMPLATE/bug_report.yml
+      ISSUE_TEMPLATE/feature_request.yml
+      PULL_REQUEST_TEMPLATE.md
       release-drafter.yml
       labels.yml
       workflows/release-drafter.yaml
