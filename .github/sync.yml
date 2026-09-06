@@ -1,49 +1,7 @@
 ---
 group:
-  # python repo's with Renovate
-  - files:
-      # Specific
-      - source: python_package/renovate.json
-        dest: .github/renovate.json
-      - source: python_package/.devcontainer
-        dest: .devcontainer/
-      # General - files and folders
-      - source: python_package/.gitignore
-        dest: .gitignore
-      - source: python_package/.yamllint
-        dest: .yamllint
-      # .github folder + workflows
-      - source: github/
-        dest: .github/
-    repos: |
-      klaasnicolaas/python-antwerpen
-      klaasnicolaas/python-arnhem
-      klaasnicolaas/python-autarco
-      klaasnicolaas/python-brussel
-      klaasnicolaas/python-dresden
-      klaasnicolaas/python-dusseldorf
-      klaasnicolaas/python-easyenergy
-      klaasnicolaas/python-eindhoven
-      klaasnicolaas/python-eiswarnung
-      klaasnicolaas/python-energyzero
-      klaasnicolaas/python-hamburg
-      klaasnicolaas/python-koeln
-      klaasnicolaas/python-liege
-      klaasnicolaas/python-muenster
-      klaasnicolaas/python-namur
-      klaasnicolaas/python-nednl
-      klaasnicolaas/python-odp-amsterdam
-      klaasnicolaas/python-odp-gent
-      klaasnicolaas/python-odp-stockholm
-      klaasnicolaas/python-omnikinverter
-      klaasnicolaas/python-p1monitor
-      klaasnicolaas/python-powerfox
-      klaasnicolaas/python-solcast-pv
-      klaasnicolaas/python-spoolman
-      klaasnicolaas/python-weerlive
-      klaasnicolaas/python-zurich
-
-  # Python packages using central defaults and label synchronization.
+  # Personal Python packages: shared configuration lives in klaasnicolaas/.github.
+  # Local tooling and workflow sources remain here until their template handover.
   - files:
       - source: python_package/.devcontainer
         dest: .devcontainer/
@@ -61,7 +19,33 @@ group:
           workflows/release-drafter.yaml
           workflows/sync-labels.yaml
     repos: |
+      klaasnicolaas/python-antwerpen
+      klaasnicolaas/python-arnhem
+      klaasnicolaas/python-autarco
+      klaasnicolaas/python-brussel
+      klaasnicolaas/python-dresden
+      klaasnicolaas/python-dusseldorf
+      klaasnicolaas/python-easyenergy
+      klaasnicolaas/python-eindhoven
+      klaasnicolaas/python-eiswarnung
+      klaasnicolaas/python-energyzero
       klaasnicolaas/python-gridnet
+      klaasnicolaas/python-hamburg
+      klaasnicolaas/python-koeln
+      klaasnicolaas/python-liege
+      klaasnicolaas/python-muenster
+      klaasnicolaas/python-namur
+      klaasnicolaas/python-nednl
+      klaasnicolaas/python-odp-amsterdam
+      klaasnicolaas/python-odp-gent
+      klaasnicolaas/python-odp-stockholm
+      klaasnicolaas/python-omnikinverter
+      klaasnicolaas/python-p1monitor
+      klaasnicolaas/python-powerfox
+      klaasnicolaas/python-solcast-pv
+      klaasnicolaas/python-spoolman
+      klaasnicolaas/python-weerlive
+      klaasnicolaas/python-zurich
 
   # NIPKaart projects - general
   - files:
@@ -76,28 +60,6 @@ group:
     repos: |
       NIPKaart/disabled-parking
       NIPKaart/offstreet-parking
-
-  # Home Assistant Glow
-  - files:
-      # Specific - files
-      - source: github/labels.yml
-        dest: .github/labels.yml
-    repos: |
-      klaasnicolaas/home-assistant-glow
-
-  # python repo's with Dependabot
-  # - files:
-  #     # Specific
-  #     - source: python_package/dependabot.yml
-  #       dest: .github/dependabot.yml
-  #     # General - files and folders
-  #     - source: python_package/.gitignore
-  #       dest: .gitignore
-  #     - source: python_package/.yamllint
-  #       dest: .yamllint
-  #     - source: github/
-  #       dest: .github/
-  #   repos: |
 
 # Copier template
 klaasnicolaas/pypackage-template:
