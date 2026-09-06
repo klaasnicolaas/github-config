@@ -43,7 +43,7 @@ group:
       klaasnicolaas/python-weerlive
       klaasnicolaas/python-zurich
 
-  # Python packages using explicit presets from klaasnicolaas/.github.
+  # Python packages using central defaults and label synchronization.
   - files:
       - source: python_package/.devcontainer
         dest: .devcontainer/
