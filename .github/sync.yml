@@ -26,7 +26,6 @@ group:
       klaasnicolaas/python-eindhoven
       klaasnicolaas/python-eiswarnung
       klaasnicolaas/python-energyzero
-      klaasnicolaas/python-gridnet
       klaasnicolaas/python-hamburg
       klaasnicolaas/python-koeln
       klaasnicolaas/python-liege
@@ -43,6 +42,24 @@ group:
       klaasnicolaas/python-spoolman
       klaasnicolaas/python-weerlive
       klaasnicolaas/python-zurich
+
+  # Python packages using central defaults and label synchronization.
+  - files:
+      - source: python_package/.devcontainer
+        dest: .devcontainer/
+      - source: python_package/.gitignore
+        dest: .gitignore
+      - source: python_package/.yamllint
+        dest: .yamllint
+      - source: github/
+        dest: .github/
+        exclude: |
+          release-drafter.yml
+          labels.yml
+          workflows/release-drafter.yaml
+          workflows/sync-labels.yaml
+    repos: |
+      klaasnicolaas/python-gridnet
 
   # NIPKaart projects - general
   - files:
@@ -96,11 +113,11 @@ klaasnicolaas/pypackage-template:
     dest: template/.github/
     exclude: |
       FUNDING.yml
+      release-drafter.yml
+      labels.yml
+      workflows/release-drafter.yaml
+      workflows/sync-labels.yaml
   ### Project general - single files ###
-  - source: github/release-drafter.yml
-    dest: .github/release-drafter.yml
-  - source: github/labels.yml
-    dest: .github/labels.yml
   - source: python_package/.gitignore
     dest: .gitignore
   - source: python_package/.yamllint
@@ -108,3 +125,6 @@ klaasnicolaas/pypackage-template:
   ### Project general - workflows ###
   - source: github/workflows/
     dest: .github/workflows/
+    exclude: |
+      release-drafter.yaml
+      sync-labels.yaml
